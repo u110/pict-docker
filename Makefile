@@ -1,7 +1,7 @@
 build:
 	docker build . -t pict-docker
 
-help: build run
+help: run
 
 run:
 	docker run --rm -it pict-docker pict
