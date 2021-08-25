@@ -35,8 +35,8 @@ make: *** [run] Error 3
 # sample
 
 ```
-$ make sample
-docker run --rm -it -v /Users/u110/workspace/personal/pict_docker:/workspace pict-docker pict /workspace/samples.txt
+$ make run samples=samples.txt
+docker run --rm -it -v /Users/u110/workspace/personal/pict_docker/samples.txt:/workspace/inputs.txt pict-docker pict /workspace/inputs.txt
 条件_麺	条件_濃さ	条件_油
 固め	濃いめ	多め
 固め	薄め	ふつう
@@ -47,5 +47,5 @@ docker run --rm -it -v /Users/u110/workspace/personal/pict_docker:/workspace pic
 固め	ふつう	ふつう
 ふつう	薄め	多め
 固め	薄め	少なめ
-柔らかめ	薄め	ふつ
+柔らかめ	薄め	ふつう
 ```
